@@ -1,0 +1,17 @@
+table {
+  font-size: 0.88rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.quarto-title-block .quarto-title {
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.25rem;
+}

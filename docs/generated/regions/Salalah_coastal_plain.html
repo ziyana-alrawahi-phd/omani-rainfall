@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-00816cf732d91f9cefeec7cfe5d9adc5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -98,12 +98,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../regions.html"> 
-<span class="menu-text">Regional Reports</span></a>
+    <a class="nav-link" href="../../validation.html"> 
+<span class="menu-text">Validation Study</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../stations.html"> 
-<span class="menu-text">Station Reports</span></a>
+<span class="menu-text">Stations</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../regions.html"> 
+<span class="menu-text">Regions</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -121,14 +125,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#regional-metadata" id="toc-regional-metadata" class="nav-link active" data-scroll-target="#regional-metadata">Regional metadata</a></li>
+  <li><a href="#regional-rainfall-profile" id="toc-regional-rainfall-profile" class="nav-link active" data-scroll-target="#regional-rainfall-profile">Regional rainfall profile</a>
+  <ul class="collapse">
+  <li><a href="#mean-annual-rainfall-by-station" id="toc-mean-annual-rainfall-by-station" class="nav-link" data-scroll-target="#mean-annual-rainfall-by-station">Mean annual rainfall by station</a></li>
+  <li><a href="#monthly-climatology-by-station" id="toc-monthly-climatology-by-station" class="nav-link" data-scroll-target="#monthly-climatology-by-station">Monthly climatology by station</a></li>
+  <li><a href="#distribution-of-annual-totals" id="toc-distribution-of-annual-totals" class="nav-link" data-scroll-target="#distribution-of-annual-totals">Distribution of annual totals</a></li>
+  </ul></li>
+  <li><a href="#supporting-tables" id="toc-supporting-tables" class="nav-link" data-scroll-target="#supporting-tables">Supporting tables</a>
+  <ul class="collapse">
+  <li><a href="#regional-metadata" id="toc-regional-metadata" class="nav-link" data-scroll-target="#regional-metadata">Regional metadata</a></li>
   <li><a href="#data-completeness" id="toc-data-completeness" class="nav-link" data-scroll-target="#data-completeness">Data completeness</a></li>
-  <li><a href="#annual-rainfall-summary" id="toc-annual-rainfall-summary" class="nav-link" data-scroll-target="#annual-rainfall-summary">Annual rainfall summary</a></li>
+  <li><a href="#annual-rainfall-summary-by-station" id="toc-annual-rainfall-summary-by-station" class="nav-link" data-scroll-target="#annual-rainfall-summary-by-station">Annual rainfall summary by station</a></li>
   <li><a href="#regional-annual-summary" id="toc-regional-annual-summary" class="nav-link" data-scroll-target="#regional-annual-summary">Regional annual summary</a></li>
-  <li><a href="#average-rainfall-days-by-category" id="toc-average-rainfall-days-by-category" class="nav-link" data-scroll-target="#average-rainfall-days-by-category">Average rainfall days by category</a></li>
-  <li><a href="#regional-rainfall-category-summary" id="toc-regional-rainfall-category-summary" class="nav-link" data-scroll-target="#regional-rainfall-category-summary">Regional rainfall category summary</a></li>
+  <li><a href="#rainfall-day-categories" id="toc-rainfall-day-categories" class="nav-link" data-scroll-target="#rainfall-day-categories">Rainfall-day categories</a></li>
   <li><a href="#monthly-climatology" id="toc-monthly-climatology" class="nav-link" data-scroll-target="#monthly-climatology">Monthly climatology</a></li>
-  <li><a href="#regional-monthly-climatology-summary" id="toc-regional-monthly-climatology-summary" class="nav-link" data-scroll-target="#regional-monthly-climatology-summary">Regional monthly climatology summary</a></li>
+  </ul></li>
   <li><a href="#mannkendall-and-sen-slope-trend-summary" id="toc-mannkendall-and-sen-slope-trend-summary" class="nav-link" data-scroll-target="#mannkendall-and-sen-slope-trend-summary">Mann–Kendall and Sen slope trend summary</a></li>
   </ul>
 </nav>
@@ -165,16 +176,59 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This report summarizes the extended NASA POWER record.</p>
-<p>Results after 2003 are not part of the Kwarteng validation study.</p>
-<p>The extended NASA POWER record is currently being evaluated separately.</p>
+<p>This report summarizes the extended NASA POWER record. Results after 2003 are not part of the Kwarteng validation study and are being evaluated separately.</p>
 </div>
 </div>
 <p><strong>Region:</strong> Salalah coastal plain<br>
 <strong>Data product:</strong> NASA POWER PRECTOTCORR<br>
 <strong>Reporting view:</strong> view_nasapower_daily_rainfall_enriched</p>
-<section id="regional-metadata" class="level2">
-<h2 class="anchored" data-anchor-id="regional-metadata">Regional metadata</h2>
+<section id="regional-rainfall-profile" class="level2">
+<h2 class="anchored" data-anchor-id="regional-rainfall-profile">Regional rainfall profile</h2>
+<p>The figures emphasize differences among stations and across time. Exact values remain available in the supporting tables.</p>
+<section id="mean-annual-rainfall-by-station" class="level3">
+<h3 class="anchored" data-anchor-id="mean-annual-rainfall-by-station">Mean annual rainfall by station</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Salalah_coastal_plain_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Mean annual NASA POWER rainfall by station across the available record.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="monthly-climatology-by-station" class="level3">
+<h3 class="anchored" data-anchor-id="monthly-climatology-by-station">Monthly climatology by station</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Salalah_coastal_plain_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Station-level mean monthly rainfall climatologies within the region.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="distribution-of-annual-totals" class="level3">
+<h3 class="anchored" data-anchor-id="distribution-of-annual-totals">Distribution of annual totals</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Salalah_coastal_plain_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Distribution of annual rainfall totals by station. Boxes show the median and interquartile range; points beyond the whiskers identify unusually wet or dry years.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="supporting-tables" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-tables">Supporting tables</h2>
+<section id="regional-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="regional-metadata">Regional metadata</h3>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -215,8 +269,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="data-completeness" class="level2">
-<h2 class="anchored" data-anchor-id="data-completeness">Data completeness</h2>
+<section id="data-completeness" class="level3">
+<h3 class="anchored" data-anchor-id="data-completeness">Data completeness</h3>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -251,8 +305,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="annual-rainfall-summary" class="level2">
-<h2 class="anchored" data-anchor-id="annual-rainfall-summary">Annual rainfall summary</h2>
+<section id="annual-rainfall-summary-by-station" class="level3">
+<h3 class="anchored" data-anchor-id="annual-rainfall-summary-by-station">Annual rainfall summary by station</h3>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -287,8 +341,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="regional-annual-summary" class="level2">
-<h2 class="anchored" data-anchor-id="regional-annual-summary">Regional annual summary</h2>
+<section id="regional-annual-summary" class="level3">
+<h3 class="anchored" data-anchor-id="regional-annual-summary">Regional annual summary</h3>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -317,16 +371,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="average-rainfall-days-by-category" class="level2">
-<h2 class="anchored" data-anchor-id="average-rainfall-days-by-category">Average rainfall days by category</h2>
-<p>The rainfall classes are defined as follows:</p>
-<ul>
-<li><strong>None:</strong> 0 mm</li>
-<li><strong>Light:</strong> greater than 0 and less than 10 mm</li>
-<li><strong>Moderate:</strong> 10–25 mm</li>
-<li><strong>Heavy:</strong> greater than 25 and up to 50 mm</li>
-<li><strong>Extreme:</strong> greater than 50 mm</li>
-</ul>
+<section id="rainfall-day-categories" class="level3">
+<h3 class="anchored" data-anchor-id="rainfall-day-categories">Rainfall-day categories</h3>
+<p>Rainfall classes are <strong>None</strong> (0 mm), <strong>Light</strong> (&gt;0–&lt;10 mm), <strong>Moderate</strong> (10–25 mm), <strong>Heavy</strong> (&gt;25–50 mm), and <strong>Extreme</strong> (&gt;50 mm).</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -380,9 +427,6 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </div>
-</section>
-<section id="regional-rainfall-category-summary" class="level2">
-<h2 class="anchored" data-anchor-id="regional-rainfall-category-summary">Regional rainfall category summary</h2>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -437,8 +481,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="monthly-climatology" class="level2">
-<h2 class="anchored" data-anchor-id="monthly-climatology">Monthly climatology</h2>
+<section id="monthly-climatology" class="level3">
+<h3 class="anchored" data-anchor-id="monthly-climatology">Monthly climatology</h3>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -580,9 +624,6 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </div>
-</section>
-<section id="regional-monthly-climatology-summary" class="level2">
-<h2 class="anchored" data-anchor-id="regional-monthly-climatology-summary">Regional monthly climatology summary</h2>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -686,12 +727,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
+</section>
 <section id="mannkendall-and-sen-slope-trend-summary" class="level2">
 <h2 class="anchored" data-anchor-id="mannkendall-and-sen-slope-trend-summary">Mann–Kendall and Sen slope trend summary</h2>
-<p>Monthly trend uses monthly totals ordered by decimal year.</p>
-<p>Annual trend uses annual totals.</p>
-<p>Summer is defined as June–September.</p>
-<p>Winter is defined as December–March.</p>
+<p>Monthly trend uses monthly totals ordered by decimal year. Annual trend uses annual totals. Summer is June–September; winter is December–March.</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -868,6 +907,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1185,13 +1229,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Omani Rainfall Project</p>
+<p>Omani Rainfall — NASA POWER vs Kwarteng (2009)</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Static reports generated with Quarto</p>
+<p>Static research site generated with Quarto</p>
 </div>
   </div>
 </footer>

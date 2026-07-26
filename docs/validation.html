@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Station Reports – Omani Rainfall</title>
+<title>NASA POWER vs Kwarteng (2009) – Omani Rainfall</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -98,11 +98,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./validation.html"> 
+    <a class="nav-link active" href="./validation.html" aria-current="page"> 
 <span class="menu-text">Validation Study</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./stations.html" aria-current="page"> 
+    <a class="nav-link" href="./stations.html"> 
 <span class="menu-text">Stations</span></a>
   </li>  
   <li class="nav-item">
@@ -117,21 +117,42 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#national-summary" id="toc-national-summary" class="nav-link active" data-scroll-target="#national-summary">National summary</a></li>
+  <li><a href="#visual-validation" id="toc-visual-validation" class="nav-link" data-scroll-target="#visual-validation">Visual validation</a>
+  <ul class="collapse">
+  <li><a href="#nasa-power-versus-kwarteng-climatology" id="toc-nasa-power-versus-kwarteng-climatology" class="nav-link" data-scroll-target="#nasa-power-versus-kwarteng-climatology">NASA POWER versus Kwarteng climatology</a></li>
+  <li><a href="#bias-by-station" id="toc-bias-by-station" class="nav-link" data-scroll-target="#bias-by-station">Bias by station</a></li>
+  <li><a href="#elevation-and-bias" id="toc-elevation-and-bias" class="nav-link" data-scroll-target="#elevation-and-bias">Elevation and bias</a></li>
+  </ul></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
+  <li><a href="#bias-and-elevation" id="toc-bias-and-elevation" class="nav-link" data-scroll-target="#bias-and-elevation">Bias and elevation</a></li>
+  <li><a href="#regional-interpretation" id="toc-regional-interpretation" class="nav-link" data-scroll-target="#regional-interpretation">Regional interpretation</a></li>
+  <li><a href="#validation-data" id="toc-validation-data" class="nav-link" data-scroll-target="#validation-data">Validation data</a></li>
+  <li><a href="#supporting-reports" id="toc-supporting-reports" class="nav-link" data-scroll-target="#supporting-reports">Supporting reports</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Station Reports</h1>
+<h1 class="title">NASA POWER vs Kwarteng (2009)</h1>
+<p class="subtitle lead">National rainfall climatology validation</p>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
   
@@ -143,43 +164,409 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Browse the matched-station evidence used by the national validation study. Each report is generated directly from DuckDB using the shared rainfall reporting functions.</p>
-<div class="report-index-summary"><strong>31</strong> station reports in the Kwarteng validation scope.</div>
-<div class="report-card-grid">
-<a class="report-card" href="generated/stations/FL455969AF_Al_Bdayah.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Al Bdayah</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/CM786116AF_Al_Buraymi_1.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Al Buraymi 1</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DM374569AF_Al_Far_Far.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Al Far Far</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/FK886394AF_Al_Ghabi.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Al Ghabi</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/EL144239BF_Al_Ghafat.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Al Ghafat</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DM459225AF_Al_Ghuzayfah_near_Al_Khabat.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Al Ghuzayfah near Al Khabat</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/FL585627AF_Al_Hajir.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Al Hajir</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/EL258618BF_Al_Hamra.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Al Hamra</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/FL245564BF_Al_Muqayhfah.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Al Muqayhfah</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/GK258642BF_Al_Wafi.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Al Wafi</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DN259176AF_Aswad.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Aswad</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DM204694AF_Dank.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Dank</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DM264436BF_Daqeeq_2.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Daqeeq 2</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DM520025AF_Falaj_As_Sudayriyin.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Falaj As Sudayriyin</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DM545506AF_Haybi.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Haybi</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DM382737BF_Hayl_Al_Adhah_2.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Hayl Al Adhah 2</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/FL516435CF_Ibra.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Ibra</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DL468825AF_Ibri.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Ibri</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DM260958BF_Kitnah_2.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Kitnah 2</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DM915258AF_Majzi_in_Wadi_Al_Hawasinah.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Majzi in Wadi Al Hawasinah</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/FH988624AF_Masirah.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Masirah</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/FL950429CF_Mazara.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Mazara</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/FM515309AF_Mina_Al_Fahal.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Mina Al Fahal</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/AD889556AF_Salalah_Airport.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Salalah Airport</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/FL072718AF_Samail.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Samail</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/EL655171AF_Sayq.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Sayq</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/FM300897AF_Seeb_Airport.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Seeb Airport</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DN436617AF_Shinas.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Shinas</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/GK594466AF_Sur.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Sur</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/DL455961BF_Tanam.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Tanam</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
-<a class="report-card" href="generated/stations/AE916185AF_Zayk_1.html"><div class="report-card-eyebrow">STATION</div><h3 class="anchored">Zayk 1</h3><p>Open the complete NASA POWER station rainfall report.</p><div class="report-card-link">Open report →</div></a>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Study scope
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This validation compares NASA POWER rainfall climatology for <strong>1981–2003</strong> with Kwarteng et al.&nbsp;(2009) station climatology for <strong>1977–2003</strong>.</p>
+<p>The extended NASA POWER record after 2003 is being evaluated separately and is not used here to infer long-term rainfall trends.</p>
+</div>
+</div>
+<section id="national-summary" class="level2">
+<h2 class="anchored" data-anchor-id="national-summary">National summary</h2>
+<div class="kpi-grid validation-kpis">
+  <div class="kpi-card"><div class="kpi-value">31</div><div class="kpi-label">Matched stations</div></div>
+  <div class="kpi-card"><div class="kpi-value">−27.49 mm</div><div class="kpi-label">Mean bias</div></div>
+  <div class="kpi-card"><div class="kpi-value">55.56 mm</div><div class="kpi-label">RMSE</div></div>
+  <div class="kpi-card"><div class="kpi-value">0.3725</div><div class="kpi-label">Observed–NASA correlation</div></div>
+</div>
+</section>
+<section id="visual-validation" class="level2">
+<h2 class="anchored" data-anchor-id="visual-validation">Visual validation</h2>
+<section id="nasa-power-versus-kwarteng-climatology" class="level3">
+<h3 class="anchored" data-anchor-id="nasa-power-versus-kwarteng-climatology">NASA POWER versus Kwarteng climatology</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="validation_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" style="width:88.0%"></p>
+<figcaption>Station mean annual rainfall from NASA POWER compared with the Kwarteng climatology. The dashed line represents exact 1:1 agreement.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="bias-by-station" class="level3">
+<h3 class="anchored" data-anchor-id="bias-by-station">Bias by station</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="validation_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>NASA POWER minus Kwarteng mean annual rainfall by station. Negative bars indicate underestimation.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="elevation-and-bias" class="level3">
+<h3 class="anchored" data-anchor-id="elevation-and-bias">Elevation and bias</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="validation_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" style="width:88.0%"></p>
+<figcaption>Relationship between station elevation and NASA POWER rainfall bias.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation">Interpretation</h2>
+<p>At the national matched-station scale, NASA POWER shows a <strong>mean negative bias</strong> relative to the Kwarteng climatology.</p>
+<p>The principal supported findings are:</p>
+<ul>
+<li>NASA POWER reproduces broad spatial rainfall patterns across Oman.</li>
+<li>NASA POWER generally underestimates Kwarteng station climatology.</li>
+<li>Underestimation becomes substantially stronger with increasing elevation.</li>
+<li>Overall agreement is moderate rather than excellent.</li>
+</ul>
+</section>
+<section id="bias-and-elevation" class="level2">
+<h2 class="anchored" data-anchor-id="bias-and-elevation">Bias and elevation</h2>
+<p>The elevation–bias correlation is <strong>−0.8236</strong>, indicating that NASA-minus-Kwarteng differences become more negative at higher elevations.</p>
+<p>This pattern is consistent with topographic smoothing or under-resolution of localized orographic rainfall by a gridded product, although elevation should not be interpreted as the sole causal factor.</p>
+</section>
+<section id="regional-interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="regional-interpretation">Regional interpretation</h2>
+<p>Regional summaries should be interpreted in light of station count, topographic setting, point gauges versus gridded rainfall, differing observation periods, provisional station matching, and shared NASA POWER grid cells.</p>
+<p>Regions represented by fewer than three matched stations should be treated cautiously.</p>
+</section>
+<section id="validation-data" class="level2">
+<h2 class="anchored" data-anchor-id="validation-data">Validation data</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Station-level validation results</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Station</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Region</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Elevation (m)</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Kwarteng mean (mm)</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">NASA POWER mean (mm)</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Bias (mm)</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Bias (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Aswad</td>
+<td style="text-align: left;">Batinah coastal plain</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">132.67</td>
+<td style="text-align: right;">130.57</td>
+<td style="text-align: right;">-2.10</td>
+<td style="text-align: right;">-1.58</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Shinas</td>
+<td style="text-align: left;">Batinah coastal plain</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">118.13</td>
+<td style="text-align: right;">75.19</td>
+<td style="text-align: right;">-42.94</td>
+<td style="text-align: right;">-36.35</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Zayk 1</td>
+<td style="text-align: left;">Dhofar Mountains</td>
+<td style="text-align: right;">858</td>
+<td style="text-align: right;">184.58</td>
+<td style="text-align: right;">61.65</td>
+<td style="text-align: right;">-122.93</td>
+<td style="text-align: right;">-66.60</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Al Buraymi 1</td>
+<td style="text-align: left;">Interior region</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">65.15</td>
+<td style="text-align: right;">69.21</td>
+<td style="text-align: right;">4.06</td>
+<td style="text-align: right;">6.23</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Al Ghabi</td>
+<td style="text-align: left;">Interior region</td>
+<td style="text-align: right;">280</td>
+<td style="text-align: right;">92.85</td>
+<td style="text-align: right;">120.57</td>
+<td style="text-align: right;">27.72</td>
+<td style="text-align: right;">29.85</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Al Wafi</td>
+<td style="text-align: left;">Interior region</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">69.92</td>
+<td style="text-align: right;">69.79</td>
+<td style="text-align: right;">-0.13</td>
+<td style="text-align: right;">-0.19</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dank</td>
+<td style="text-align: left;">Interior region</td>
+<td style="text-align: right;">320</td>
+<td style="text-align: right;">75.81</td>
+<td style="text-align: right;">65.69</td>
+<td style="text-align: right;">-10.12</td>
+<td style="text-align: right;">-13.35</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ibri</td>
+<td style="text-align: left;">Interior region</td>
+<td style="text-align: right;">330</td>
+<td style="text-align: right;">90.36</td>
+<td style="text-align: right;">59.06</td>
+<td style="text-align: right;">-31.30</td>
+<td style="text-align: right;">-34.64</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Masirah</td>
+<td style="text-align: left;">Interior region</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">70.81</td>
+<td style="text-align: right;">44.04</td>
+<td style="text-align: right;">-26.77</td>
+<td style="text-align: right;">-37.81</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tanam</td>
+<td style="text-align: left;">Interior region</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">70.83</td>
+<td style="text-align: right;">59.06</td>
+<td style="text-align: right;">-11.77</td>
+<td style="text-align: right;">-16.62</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Al Hajir</td>
+<td style="text-align: left;">Northeast coast</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">73.60</td>
+<td style="text-align: right;">113.43</td>
+<td style="text-align: right;">39.83</td>
+<td style="text-align: right;">54.12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mazara</td>
+<td style="text-align: left;">Northeast coast</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">110.08</td>
+<td style="text-align: right;">126.56</td>
+<td style="text-align: right;">16.48</td>
+<td style="text-align: right;">14.97</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mina Al Fahal</td>
+<td style="text-align: left;">Northeast coast</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">87.38</td>
+<td style="text-align: right;">113.43</td>
+<td style="text-align: right;">26.05</td>
+<td style="text-align: right;">29.81</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Seeb Airport</td>
+<td style="text-align: left;">Northeast coast</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">80.44</td>
+<td style="text-align: right;">107.46</td>
+<td style="text-align: right;">27.02</td>
+<td style="text-align: right;">33.59</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sur</td>
+<td style="text-align: left;">Northeast coast</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">79.37</td>
+<td style="text-align: right;">81.23</td>
+<td style="text-align: right;">1.86</td>
+<td style="text-align: right;">2.34</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Al Bdayah</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">595</td>
+<td style="text-align: right;">181.92</td>
+<td style="text-align: right;">115.78</td>
+<td style="text-align: right;">-66.14</td>
+<td style="text-align: right;">-36.36</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Al Far Far</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">620</td>
+<td style="text-align: right;">113.77</td>
+<td style="text-align: right;">76.27</td>
+<td style="text-align: right;">-37.50</td>
+<td style="text-align: right;">-32.96</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Al Ghafat</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">560</td>
+<td style="text-align: right;">132.12</td>
+<td style="text-align: right;">91.04</td>
+<td style="text-align: right;">-41.08</td>
+<td style="text-align: right;">-31.09</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Al Ghuzayfah near Al Khabat</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">520</td>
+<td style="text-align: right;">106.96</td>
+<td style="text-align: right;">76.27</td>
+<td style="text-align: right;">-30.69</td>
+<td style="text-align: right;">-28.69</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Al Hamra</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">700</td>
+<td style="text-align: right;">167.52</td>
+<td style="text-align: right;">131.58</td>
+<td style="text-align: right;">-35.94</td>
+<td style="text-align: right;">-21.45</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Al Muqayhfah</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">720</td>
+<td style="text-align: right;">150.57</td>
+<td style="text-align: right;">115.78</td>
+<td style="text-align: right;">-34.79</td>
+<td style="text-align: right;">-23.11</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Daqeeq 2</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">840</td>
+<td style="text-align: right;">175.43</td>
+<td style="text-align: right;">76.27</td>
+<td style="text-align: right;">-99.16</td>
+<td style="text-align: right;">-56.52</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Falaj As Sudayriyin</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">650</td>
+<td style="text-align: right;">151.85</td>
+<td style="text-align: right;">65.69</td>
+<td style="text-align: right;">-86.16</td>
+<td style="text-align: right;">-56.74</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Haybi</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">540</td>
+<td style="text-align: right;">110.38</td>
+<td style="text-align: right;">76.27</td>
+<td style="text-align: right;">-34.11</td>
+<td style="text-align: right;">-30.90</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Hayl Al Adhah 2</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">430</td>
+<td style="text-align: right;">103.29</td>
+<td style="text-align: right;">75.19</td>
+<td style="text-align: right;">-28.10</td>
+<td style="text-align: right;">-27.20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ibra</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">425</td>
+<td style="text-align: right;">122.12</td>
+<td style="text-align: right;">120.57</td>
+<td style="text-align: right;">-1.55</td>
+<td style="text-align: right;">-1.27</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Kitnah 2</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">650</td>
+<td style="text-align: right;">109.67</td>
+<td style="text-align: right;">76.27</td>
+<td style="text-align: right;">-33.40</td>
+<td style="text-align: right;">-30.46</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Majzi in Wadi Al Hawasinah</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">475</td>
+<td style="text-align: right;">98.37</td>
+<td style="text-align: right;">95.07</td>
+<td style="text-align: right;">-3.30</td>
+<td style="text-align: right;">-3.35</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Samail</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">420</td>
+<td style="text-align: right;">84.88</td>
+<td style="text-align: right;">107.46</td>
+<td style="text-align: right;">22.58</td>
+<td style="text-align: right;">26.60</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sayq</td>
+<td style="text-align: left;">Northern Oman mountains</td>
+<td style="text-align: right;">1950</td>
+<td style="text-align: right;">330.15</td>
+<td style="text-align: right;">131.58</td>
+<td style="text-align: right;">-198.57</td>
+<td style="text-align: right;">-60.15</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Salalah Airport</td>
+<td style="text-align: left;">Salalah coastal plain</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">112.00</td>
+<td style="text-align: right;">72.74</td>
+<td style="text-align: right;">-39.26</td>
+<td style="text-align: right;">-35.05</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="supporting-reports" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-reports">Supporting reports</h2>
+<div class="nav-card-grid two-column">
+  <a class="nav-card" href="stations.html"><div class="nav-card-eyebrow">STATION LEVEL</div><h3 class="anchored">Station Reports</h3><p>Browse site-level NASA POWER summaries for individual stations.</p><div class="nav-card-link">Browse stations →</div></a>
+  <a class="nav-card" href="regions.html"><div class="nav-card-eyebrow">REGIONAL LEVEL</div><h3 class="anchored">Regional Reports</h3><p>Explore regional rainfall summaries and geographic groupings.</p><div class="nav-card-link">Browse regions →</div></a>
+</div>
+</section>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<p>Kwarteng, A. Y., Dorvlo, A. S. &amp; Vijaya Kumar, G. T. (2009).<br>
+<em>Analysis of a 27-year rainfall data (1977–2003) in the Sultanate of Oman.</em><br>
+<strong>International Journal of Climatology</strong>, 29, 605–617.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

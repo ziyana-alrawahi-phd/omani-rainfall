@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Omani Rainfall Reporting – Omani Rainfall</title>
+<title>Omani Rainfall Validation Study – Omani Rainfall</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-00816cf732d91f9cefeec7cfe5d9adc5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -98,12 +98,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./regions.html"> 
-<span class="menu-text">Regional Reports</span></a>
+    <a class="nav-link" href="./validation.html"> 
+<span class="menu-text">Validation Study</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./stations.html"> 
-<span class="menu-text">Station Reports</span></a>
+<span class="menu-text">Stations</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./regions.html"> 
+<span class="menu-text">Regions</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -113,21 +117,22 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Omani Rainfall Reporting</h1>
+<h1 class="title">Omani Rainfall Validation Study</h1>
+<p class="subtitle lead">NASA POWER rainfall climatology compared with Kwarteng et al.&nbsp;(2009)</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -139,26 +144,87 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This site presents static NASA POWER station and regional rainfall reports generated directly from the Omani Rainfall DuckDB warehouse.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<section class="hero-panel hero-panel-photo" role="img" aria-label="Historic Omani settlement and date palms beneath an arid mountain landscape">
+<div class="hero-kicker">RAINFALL CLIMATOLOGY • SULTANATE OF OMAN</div>
+<h1>Evaluating gridded rainfall against published station climatology</h1>
+<p class="hero-author">By Dr. Ziyana Al-Rawahi</p>
+<p>This research portal evaluates how well NASA POWER reproduces the spatial rainfall climatology reported by Kwarteng et al. (2009), identifies systematic bias, and provides station- and region-level evidence for closer inspection.</p>
+<div class="hero-actions">
+<a class="dashboard-btn dashboard-btn-primary" href="validation.html">View validation results</a>
+<a class="dashboard-btn dashboard-btn-secondary" href="stations.html">Browse 31 stations</a>
+<a class="dashboard-btn dashboard-btn-secondary" href="regions.html">Explore 6 regions</a>
+</div>
+</section>
+<section id="research-objective" class="level2">
+<h2 class="anchored" data-anchor-id="research-objective">Research objective</h2>
+<p>The central question is whether a gridded rainfall product can reproduce the broad station-based climatology of Oman sufficiently well to support subsequent spatial and temporal analysis.</p>
+<div class="workflow-grid">
+<div class="workflow-step"><div class="workflow-number">01</div><div class="workflow-label">Published reference</div><h3 class="anchored">Kwarteng climatology</h3><p>Station rainfall means for 1977–2003.</p></div>
+<div class="workflow-arrow">→</div>
+<div class="workflow-step"><div class="workflow-number">02</div><div class="workflow-label">Spatial alignment</div><h3 class="anchored">31 matched stations</h3><p>Validated station identities and geographic regions.</p></div>
+<div class="workflow-arrow">→</div>
+<div class="workflow-step"><div class="workflow-number">03</div><div class="workflow-label">Gridded comparison</div><h3 class="anchored">NASA POWER</h3><p>PRECTOTCORR climatology for 1981–2003.</p></div>
+<div class="workflow-arrow">→</div>
+<div class="workflow-step"><div class="workflow-number">04</div><div class="workflow-label">Evaluation</div><h3 class="anchored">Bias and agreement</h3><p>National, regional, elevation, and station-level assessment.</p></div>
+</div>
+</section>
+<section id="key-results" class="level2">
+<h2 class="anchored" data-anchor-id="key-results">Key results</h2>
+<div class="kpi-grid">
+<div class="kpi-card"><div class="kpi-value">31</div><div class="kpi-label">Matched stations</div><div class="kpi-note">Canonical validation network</div></div>
+<div class="kpi-card"><div class="kpi-value">6</div><div class="kpi-label">Kwarteng regions</div><div class="kpi-note">Published study domain</div></div>
+<div class="kpi-card"><div class="kpi-value">−27.49 mm</div><div class="kpi-label">Mean NASA POWER bias</div><div class="kpi-note">NASA POWER minus Kwarteng climatology</div></div>
+<div class="kpi-card"><div class="kpi-value">−0.8236</div><div class="kpi-label">Elevation–bias correlation</div><div class="kpi-note">Underestimation increases with elevation</div></div>
+</div>
+</section>
+<section id="main-findings" class="level2">
+<h2 class="anchored" data-anchor-id="main-findings">Main findings</h2>
+<div class="finding-grid">
+<div class="finding-card"><div class="finding-number">01</div><h3 class="anchored">Spatial pattern retained</h3><p>NASA POWER reproduces broad geographic variation across the matched station network.</p></div>
+<div class="finding-card"><div class="finding-number">02</div><h3 class="anchored">Systematic negative bias</h3><p>NASA POWER is lower than the Kwarteng climatology at 23 of 31 matched stations.</p></div>
+<div class="finding-card"><div class="finding-number">03</div><h3 class="anchored">Strong elevation effect</h3><p>Negative NASA-minus-Kwarteng bias becomes substantially larger at higher elevations.</p></div>
+<div class="finding-card"><div class="finding-number">04</div><h3 class="anchored">Moderate agreement</h3><p>The observed-versus-NASA correlation is positive, but not strong enough to imply interchangeability.</p></div>
+</div>
+</section>
+<section id="study-design" class="level2">
+<h2 class="anchored" data-anchor-id="study-design">Study design</h2>
+<div class="study-grid">
+<div class="study-card"><div class="study-badge">REFERENCE CLIMATOLOGY</div><h3 class="anchored">Kwarteng et al. (2009)</h3><p class="study-period">1977–2003</p><p>Published station rainfall climatology derived from a 27-year observational record.</p></div>
+<div class="study-vs">compared with</div>
+<div class="study-card"><div class="study-badge">GRIDDED PRODUCT</div><h3 class="anchored">NASA POWER PRECTOTCORR</h3><p class="study-period">1981–2003</p><p>Daily precipitation aggregated into station-scale climatological summaries at matched locations.</p></div>
+</div>
+<div class="study-summary-strip"><span><strong>31</strong> matched stations</span><span><strong>6</strong> study regions</span><span><strong>1981–2003</strong> NASA comparison period</span><span><strong>1977–2003</strong> reference period</span></div>
+</section>
+<section id="explore-the-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="explore-the-evidence">Explore the evidence</h2>
+<div class="nav-card-grid">
+<a class="nav-card nav-card-featured" href="validation.html"><div class="nav-card-eyebrow">PRIMARY ANALYSIS</div><h3 class="anchored">Validation Study</h3><p>Review national bias, RMSE, correlation, regional differences, and elevation effects.</p><div class="nav-card-link">View validation results →</div></a>
+<a class="nav-card" href="stations.html"><div class="nav-card-eyebrow">STATION EVIDENCE</div><h3 class="anchored">31 Station Reports</h3><p>Inspect site-level rainfall completeness, climatology, categories, and trend summaries.</p><div class="nav-card-link">Browse stations →</div></a>
+<a class="nav-card" href="regions.html"><div class="nav-card-eyebrow">REGIONAL EVIDENCE</div><h3 class="anchored">6 Regional Reports</h3><p>Compare rainfall behavior across the geographic regions represented in the Kwarteng study.</p><div class="nav-card-link">Browse regions →</div></a>
+</div>
+</section>
+<section id="scientific-scope" class="level2">
+<h2 class="anchored" data-anchor-id="scientific-scope">Scientific scope</h2>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Scientific boundary
+<span class="screen-reader-only">Important</span>Comparison period and interpretation boundary
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The station and regional pages may summarize NASA POWER through 2025. The extended record is currently being evaluated separately and is not interpreted here as evidence of a post-2003 rainfall trend.</p>
+<p>The validation compares <strong>NASA POWER rainfall climatology for 1981–2003</strong> with the station climatology published by <strong>Kwarteng et al.&nbsp;(2009)</strong> for <strong>1977–2003</strong>. The periods are similar but not identical.</p>
+<p>The extended NASA POWER record after 2003 is evaluated separately. This portal does <strong>not</strong> use the validation results to infer post-2003 rainfall trends.</p>
 </div>
 </div>
-<section id="reports" class="level2">
-<h2 class="anchored" data-anchor-id="reports">Reports</h2>
-<ul>
-<li><a href="./regions.html">Regional reports</a></li>
-<li><a href="./stations.html">Station reports</a></li>
-</ul>
+</section>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<div class="reference-card">
+<p>Kwarteng, A. Y., Dorvlo, A. S. &amp; Vijaya Kumar, G. T. (2009).<br><em>Analysis of a 27-year rainfall data (1977–2003) in the Sultanate of Oman.</em><br><strong>International Journal of Climatology</strong>, 29, 605–617.</p>
+</div>
 
 
 </section>
@@ -251,6 +317,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -568,13 +639,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Omani Rainfall Project</p>
+<p>Omani Rainfall — NASA POWER vs Kwarteng (2009)</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Static reports generated with Quarto</p>
+<p>Static research site generated with Quarto</p>
 </div>
   </div>
 </footer>

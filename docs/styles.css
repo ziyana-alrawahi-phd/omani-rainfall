@@ -1,3 +1,319 @@
+/* ==========================================================================
+   Omani Rainfall — Quarto research dashboard
+   ========================================================================== */
+
+:root {
+  --oman-teal-900: #083f49;
+  --oman-teal-800: #0b4f5c;
+  --oman-teal-700: #126776;
+  --oman-teal-100: #e7f3f5;
+  --oman-blue-100: #edf5f8;
+  --oman-sand-500: #c8a66a;
+  --oman-sand-100: #f7f1e7;
+  --oman-slate-900: #1e2a30;
+  --oman-slate-700: #44545c;
+  --oman-slate-500: #6b7b83;
+  --oman-border: #dce5e8;
+  --oman-bg: #f5f8f8;
+  --oman-white: #ffffff;
+  --oman-shadow: 0 10px 30px rgba(17, 53, 62, 0.08);
+}
+
+/* Base --------------------------------------------------------------------- */
+
+body {
+  background: var(--oman-bg);
+  color: var(--oman-slate-900);
+}
+
+main.content {
+  max-width: 1180px;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--oman-slate-900);
+}
+
+h2 {
+  margin-top: 2.6rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--oman-border);
+}
+
+/* Navbar ------------------------------------------------------------------- */
+
+.navbar {
+  box-shadow: 0 2px 14px rgba(8, 63, 73, 0.16);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+}
+
+/* Hero --------------------------------------------------------------------- */
+
+.hero-panel {
+  margin: 1rem 0 2rem;
+  padding: 3.2rem 3.2rem 3rem;
+  border-radius: 20px;
+  background:
+    linear-gradient(135deg, rgba(8, 63, 73, 0.97), rgba(18, 103, 118, 0.91)),
+    linear-gradient(45deg, var(--oman-teal-900), var(--oman-teal-700));
+  color: var(--oman-white);
+  box-shadow: var(--oman-shadow);
+}
+
+.hero-panel h1 {
+  max-width: 850px;
+  margin: 0.35rem 0 1rem;
+  color: var(--oman-white);
+  font-size: clamp(2.1rem, 4vw, 3.6rem);
+  line-height: 1.08;
+  font-weight: 750;
+}
+
+.hero-panel h2 {
+  color: var(--oman-white);
+}
+
+.hero-panel p {
+  max-width: 780px;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.12rem;
+}
+
+.hero-kicker {
+  color: #c6e4e9;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.dashboard-btn {
+  display: inline-block;
+  padding: 0.72rem 1.05rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 650;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dashboard-btn:hover {
+  transform: translateY(-1px);
+}
+
+.dashboard-btn-primary {
+  background: var(--oman-white);
+  color: var(--oman-teal-900);
+}
+
+.dashboard-btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  color: var(--oman-white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* KPI cards ---------------------------------------------------------------- */
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.kpi-card {
+  padding: 1.35rem 1.35rem 1.2rem;
+  border: 1px solid var(--oman-border);
+  border-top: 4px solid var(--oman-teal-700);
+  border-radius: 12px;
+  background: var(--oman-white);
+  box-shadow: 0 5px 18px rgba(17, 53, 62, 0.05);
+}
+
+.kpi-value {
+  color: var(--oman-teal-800);
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 750;
+}
+
+.kpi-label {
+  margin-top: 0.45rem;
+  font-weight: 700;
+}
+
+.kpi-note {
+  margin-top: 0.4rem;
+  color: var(--oman-slate-500);
+  font-size: 0.84rem;
+}
+
+/* Findings ----------------------------------------------------------------- */
+
+.finding-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.finding-card {
+  padding: 1.3rem;
+  border: 1px solid var(--oman-border);
+  border-radius: 12px;
+  background: var(--oman-white);
+}
+
+.finding-number {
+  margin-bottom: 0.7rem;
+  color: var(--oman-sand-500);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.finding-card h3 {
+  margin-top: 0;
+  font-size: 1.08rem;
+}
+
+.finding-card p {
+  margin-bottom: 0;
+  color: var(--oman-slate-700);
+  font-size: 0.92rem;
+}
+
+/* Study design ------------------------------------------------------------- */
+
+.study-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.study-card {
+  padding: 1.5rem;
+  border: 1px solid var(--oman-border);
+  border-radius: 14px;
+  background: var(--oman-white);
+}
+
+.study-badge,
+.nav-card-eyebrow {
+  color: var(--oman-teal-700);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.study-card h3 {
+  margin: 0.55rem 0 0.2rem;
+}
+
+.study-period {
+  color: var(--oman-sand-500);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.study-vs {
+  align-self: center;
+  color: var(--oman-slate-500);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.study-summary-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.4rem;
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  background: var(--oman-blue-100);
+  color: var(--oman-slate-700);
+}
+
+/* Navigation cards --------------------------------------------------------- */
+
+.nav-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.nav-card-grid.two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.nav-card {
+  display: block;
+  min-height: 220px;
+  padding: 1.5rem;
+  border: 1px solid var(--oman-border);
+  border-radius: 14px;
+  background: var(--oman-white);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 5px 18px rgba(17, 53, 62, 0.045);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nav-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--oman-shadow);
+  color: inherit;
+}
+
+.nav-card-featured {
+  border-top: 4px solid var(--oman-teal-700);
+}
+
+.nav-card h3 {
+  margin: 0.55rem 0 0.7rem;
+}
+
+.nav-card p {
+  color: var(--oman-slate-700);
+}
+
+.nav-card-link {
+  margin-top: 1.1rem;
+  color: var(--oman-teal-700);
+  font-weight: 700;
+}
+
+/* Reference ---------------------------------------------------------------- */
+
+.reference-card {
+  padding: 1.25rem 1.4rem;
+  border-left: 4px solid var(--oman-sand-500);
+  border-radius: 8px;
+  background: var(--oman-sand-100);
+}
+
+/* Tables ------------------------------------------------------------------- */
+
 table {
   font-size: 0.88rem;
 }
@@ -10,8 +326,138 @@ table {
   margin-bottom: 0.5rem;
 }
 
-h2 {
-  margin-top: 2rem;
-  border-bottom: 1px solid #e5e7eb;
-  padding-bottom: 0.25rem;
+/* Callouts ----------------------------------------------------------------- */
+
+.callout {
+  border-radius: 10px;
+}
+
+/* Footer ------------------------------------------------------------------- */
+
+.nav-footer {
+  border-top: 1px solid var(--oman-border);
+  background: var(--oman-white);
+}
+
+/* Responsive --------------------------------------------------------------- */
+
+@media (max-width: 980px) {
+  .kpi-grid,
+  .finding-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nav-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-panel {
+    padding: 2rem 1.25rem;
+    border-radius: 14px;
+  }
+
+  .kpi-grid,
+  .finding-grid,
+  .nav-card-grid.two-column,
+  .study-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .study-vs {
+    justify-self: center;
+  }
+
+  .kpi-value {
+    font-size: 1.7rem;
+  }
+}
+
+
+/* Research workflow -------------------------------------------------------- */
+.hero-author { margin: -0.25rem 0 1rem; font-weight: 650; color: #d8edf0 !important; }
+.workflow-grid { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; gap: .75rem; align-items: stretch; margin: 1.5rem 0 2.5rem; }
+.workflow-step { padding: 1.25rem; border: 1px solid var(--oman-border); border-radius: 12px; background: var(--oman-white); }
+.workflow-step h3 { margin: .35rem 0 .5rem; font-size: 1.05rem; }
+.workflow-step p { margin: 0; color: var(--oman-slate-700); font-size: .88rem; }
+.workflow-number { color: var(--oman-sand-500); font-size: .75rem; font-weight: 800; }
+.workflow-label { margin-top: .35rem; color: var(--oman-teal-700); font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.workflow-arrow { align-self: center; color: var(--oman-teal-700); font-size: 1.4rem; font-weight: 700; }
+
+/* Report indexes ----------------------------------------------------------- */
+.report-index-summary { margin: 1rem 0 1.5rem; padding: 1rem 1.2rem; border-left: 4px solid var(--oman-teal-700); border-radius: 8px; background: var(--oman-blue-100); }
+.report-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.report-card { display: block; min-height: 190px; padding: 1.35rem; border: 1px solid var(--oman-border); border-radius: 12px; background: var(--oman-white); color: inherit; text-decoration: none; box-shadow: 0 5px 18px rgba(17,53,62,.045); transition: transform .15s ease, box-shadow .15s ease; }
+.report-card:hover { transform: translateY(-2px); box-shadow: var(--oman-shadow); color: inherit; }
+.report-card-eyebrow { color: var(--oman-teal-700); font-size: .68rem; font-weight: 800; letter-spacing: .1em; }
+.report-card h3 { margin: .55rem 0 .6rem; font-size: 1.05rem; }
+.report-card p { color: var(--oman-slate-700); font-size: .88rem; }
+.report-card-link { margin-top: 1rem; color: var(--oman-teal-700); font-weight: 700; }
+
+@media (max-width: 1100px) {
+  .workflow-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .workflow-arrow { display: none; }
+  .report-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .workflow-grid, .report-card-grid { grid-template-columns: 1fr; }
+}
+
+/* Hero photograph ---------------------------------------------------------- */
+
+.hero-panel-photo {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image:
+    linear-gradient(90deg, rgba(7, 31, 37, 0.92) 0%, rgba(8, 63, 73, 0.78) 46%, rgba(8, 63, 73, 0.22) 100%),
+    linear-gradient(0deg, rgba(7, 31, 37, 0.55), rgba(7, 31, 37, 0.08)),
+    url("assets/omani_rainfall_landscape.png");
+  background-size: cover;
+  background-position: center 56%;
+}
+
+.hero-panel-photo h1,
+.hero-panel-photo p,
+.hero-panel-photo .hero-kicker,
+.hero-panel-photo .hero-actions {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-panel-photo .hero-author {
+  margin: 0 0 0.55rem;
+  color: #ffffff;
+  font-size: 0.98rem;
+  font-weight: 650;
+}
+
+/* Figures ------------------------------------------------------------------ */
+
+.quarto-figure {
+  margin: 1.2rem auto 2rem;
+  padding: 1rem 1rem 0.65rem;
+  border: 1px solid var(--oman-border);
+  border-radius: 12px;
+  background: var(--oman-white);
+  box-shadow: 0 5px 18px rgba(17, 53, 62, 0.045);
+}
+
+.quarto-figure figcaption {
+  margin-top: 0.75rem;
+  color: var(--oman-slate-500);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 760px) {
+  .hero-panel-photo {
+    min-height: 540px;
+    padding: 2rem 1.5rem;
+    background-position: 62% center;
+  }
 }

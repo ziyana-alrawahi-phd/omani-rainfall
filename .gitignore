@@ -1,0 +1,15 @@
+# Ignore everything
+*
+
+# Keep Git metadata
+!.gitignore
+
+# Keep GitHub Pages site
+!docs/
+!docs/**
+
+# (Optional) Keep the README
+# !README.md
+
+# (Optional) Keep LICENSE
+# !LICENSE
